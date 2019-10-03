@@ -27,7 +27,7 @@ namespace Antikvariatägarens_dotter
 
         }
         public void print()
-        {
+        { // med dessa instanser kan användaren ge input på vilken genre/category hen önskar samt få se namn, pris och rarity på boken
         var genre = Console.ReadLine();
             Console.WriteLine("Detta är en: " + genre + " bok");
             
@@ -45,6 +45,8 @@ namespace Antikvariatägarens_dotter
         {
 
             Console.WriteLine("Välj bok genre");
+           
+           
             
 
             Book bok = new Book();
