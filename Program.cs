@@ -15,20 +15,27 @@ namespace Antikvariatägarens_dotter
         private string category;
         private int actualValue;
         private bool cursed;
-
+        public string genre;
         Random generator = new Random(); 
         // Denna publika konstruktor finns för att ge världen till alla variabler som skapats i klassen.
         public Book()
         {
+            name = "Speedwagon";
             price = generator.Next(200);
-
+            rarity = generator.Next(10);
+            category = genre;
 
         }
         public void print()
         {
+        var genre = Console.ReadLine();
+            Console.WriteLine("Detta är en: " + genre + " bok");
+            
+
+            Console.WriteLine("Denna bok heter: "  + name);
             Console.WriteLine("Priset för denna bok är: " + price);
-
-
+            Console.WriteLine("Från 0-10 är denna bok " + rarity + " i sällsynthet");
+                
         }
     }
 
@@ -36,9 +43,14 @@ namespace Antikvariatägarens_dotter
     {
         static void Main(string[] args)
         {
+
+            Console.WriteLine("Välj bok genre");
+            
+
             Book bok = new Book();
             bok.print();
 
+           
 
             Console.WriteLine(bok);
 
