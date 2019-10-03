@@ -24,7 +24,7 @@ namespace Antikvariatägarens_dotter
             price = generator.Next(200);
             rarity = generator.Next(10);
             category = genre;
-
+           
         }
         public void print()
         { // med dessa instanser kan användaren ge input på vilken genre/category hen önskar samt få se namn, pris och rarity på boken
@@ -54,7 +54,7 @@ namespace Antikvariatägarens_dotter
 
            
 
-            Console.WriteLine(bok);
+            
 
 
             Console.ReadLine();
